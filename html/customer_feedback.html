@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Feedback Form</title>
+    <link rel="stylesheet" href="../css/customerStyle.css" />
+    <link rel="stylesheet" href="../css/customerIndex2NavMenu.css" />
+    <script src="../js/customer_form_validation.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1b607b98d1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="cust_feedback">
+    <header id="header_welcome">
+      <!-- Log Out button -->
+      <div class="iconLogOut">
+        <a
+          href="../php/customer_logout.php"
+          onclick="return confirm('Are you sure you want to log out?')"
+        >
+          <span class="icon"
+            ><i class="fa-solid fa-right-from-bracket"></i
+          ></span>
+        </a>
+      </div>
+      <!-- Title -->
+      <h1>Welcome To EZ Repair Customer Interface</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav id="index2_nav">
+      <ul id="index2_ul">
+        <li>
+          <a href="../php/customer_repair_request.php">Your Repair Request</a>
+        </li>
+        <li>
+          <a href="../php/customer_request_form.php"
+            >Make A New Repair Request</a
+          >
+        </li>
+        <li><a href="../php/customer_payment.php">Payment</a></li>
+        <li><a href="../html/customer_feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <h1 id="h1_feedback">Customer Feedback Form</h1>
+    <form
+      id="feedback-form"
+      onsubmit="return validateFeedback()"
+      action="../php/customer_feedback.php"
+      method="post"
+    >
+      <h3 id="h3_rate_experience">
+        Rate your experience in using our repair service:
+      </h3>
+      <!-- Radio button for selecting amount of stars. -->
+      <div class="rating-stars">
+        <input type="radio" id="star5" name="rating" value="5" checked />
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1">&#9733;</label>
+      </div>
+
+      <!-- Text area for describing customer experience. -->
+      <h3 id="h3_describe_experience">Describe your experience here:</h3>
+      <textarea
+        name="comments"
+        rows="4"
+        cols="50"
+        id="textAreaDescribe"
+      ></textarea>
+      <div class="button-container">
+        <input type="submit" value="Submit" /><br /><br /><br />
+      </div>
+    </form>
+  </body>
+</html>

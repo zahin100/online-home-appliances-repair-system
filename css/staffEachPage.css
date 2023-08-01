@@ -1,0 +1,474 @@
+/* 
+
+========= staff_login.php =========
+
+*/
+
+#staff_loginPage {
+  background-color: #027581;
+}
+
+.emp-login {
+  background-color: #f1f1f1;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border: solid;
+  padding: 0 70px;
+  border-radius: 20px;
+}
+
+.emp-login h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+
+.emp-login p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.emp-login input {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px 10px;
+  border: solid;
+  outline: none;
+  border-radius: 5px;
+  border-color: #e8e9eb;
+}
+
+.emp-login button {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 90px;
+  padding: 10px 15px;
+  width: 50%;
+  border-radius: 5px;
+  border: solid;
+  background-color: #027581;
+  color: #f1f1f1;
+  border-color: black;
+}
+
+.emp-login button:hover {
+  color: #f1f1f1;
+  background-color: #25b0be;
+
+  cursor: pointer;
+}
+
+#formGoBack {
+  margin-top: -25px;
+}
+
+/* 
+
+========= staff_repairRequest.php =========
+
+*/
+
+body {
+  background-color: #f8f4f4;
+}
+
+.repairRequestPage {
+  margin-left: 260px;
+  margin-top: 30px;
+}
+
+#titleRepairRequest {
+  margin-left: 9px;
+  margin-bottom: 3px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 50px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.cardBox .card {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardBox .card .numbers {
+  position: relative;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.cardBox .card .cardName {
+  color: #999;
+}
+
+.cardBox .card .iconBox .fa-solid.fa-screwdriver-wrench {
+  font-size: 2.5em;
+  color: #003147;
+}
+
+.cardBox .card .iconBox .fa-solid.fa-circle-exclamation {
+  font-size: 2.5em;
+  color: #e69b00;
+}
+
+.cardBox .card .iconBox .fa-solid.fa-circle-check {
+  font-size: 2.5em;
+  color: #48bf53;
+}
+
+.cardBox .card .iconBox .fa-solid.fa-truck-fast {
+  font-size: 2.5em;
+  color: #003147;
+}
+
+.tableRepairRequest {
+  margin-left: 10px;
+  margin-right: 13px;
+}
+
+.tableRepairRequest table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableRepairRequest td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 13px;
+}
+
+.tableRepairRequest th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  color: white;
+  background-color: #027581;
+}
+
+.tableRepairRequest tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#btnViewRepairDetails {
+  background-color: #027581;
+  color: white;
+  padding: 7px;
+}
+
+#btnViewRepairDetails:hover {
+  background-color: #25b0be;
+  cursor: pointer;
+}
+
+/* 
+
+========= staff_repairDetails.php =========
+
+*/
+
+#titleRepairDetails {
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+.repairDetailsTable {
+  margin-left: 250px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.repairDetailsTable img {
+  border-radius: 5px;
+  width: 200;
+  height: 200;
+}
+
+.repairDetailsTable table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.repairDetailsTable th,
+td {
+  padding: 13px;
+  text-align: left;
+}
+
+.repairDetailsTable th {
+  width: 25%;
+}
+
+#btnBack {
+  padding: 5px;
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+
+#btnBack:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+.Pending {
+  background: #e69b00;
+  font-weight: 400;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.Shipped {
+  background: #48bf53;
+  font-weight: 400;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.Completed {
+  background: #48bf53;
+  font-weight: 400;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.fa.fa-download {
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.btnDownloadFile {
+  height: 40px;
+}
+
+#linkDownloadFile {
+  text-decoration: none;
+  color: black;
+  padding: 20px 20px 20px 5px;
+  font-size: 15px;
+}
+
+#btnUpdateRepairStatus,
+#btnUpdateShipmentStatus {
+  background-color: #027581;
+  padding: 7px;
+  color: white;
+}
+
+#btnUpdateRepairStatus:hover,
+#btnUpdateShipmentStatus:hover {
+  background-color: #25b0be;
+  cursor: pointer;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #027581;
+  color: white;
+  padding: 16px 20px;
+  border: solid black;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  border: 3px solid #f1f1f1;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 280px;
+  padding: 10px;
+  margin-left: -2px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type="number"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="number"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #027581;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+#closePopup3 {
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: lightgray;
+  color: black;
+  border: none;
+  padding: 5px;
+}
+
+.popup3 {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.popup-content3 {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 30%;
+  font-weight: bolder;
+}
+.popup-content3 button {
+  display: block;
+  margin: 0 auto;
+}
+.show3 {
+  display: block;
+}
+
+.calculate-button {
+  background-color: #027581;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#titleCalculatePrice {
+  color: #027581;
+}
+
+#displayTotalPrice {
+  border: none;
+  border-color: transparent;
+}
+
+/* 
+
+========= staff_salesReport.php =========
+
+*/
+
+.salesReportPage {
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+#btnSalesReport {
+  margin-top: 20px;
+  background-color: #027581;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+#btnSalesReport:hover {
+  background-color: #25b0be;
+  cursor: pointer;
+}
+
+.salesReportPage form {
+  display: inline;
+}
+
+#totalRepaired,
+#totalSales {
+  font-weight: bold;
+}
+
+#btnGeneratePDF {
+  background-color: #027581;
+  color: white;
+  padding: 7px;
+}
+
+#btnGeneratePDF:hover {
+  background-color: #25b0be;
+  cursor: pointer;
+}

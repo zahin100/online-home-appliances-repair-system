@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="../css/customerStyle.css" />
+  </head>
+  <body id="cust_login">
+    <div class="login-container">
+      <h2>Customer Login</h2>
+
+      <!-- Customer login form -->
+      <form id="login-form" action="../php/customer_login.php" method="post">
+        <div class="form-group">
+          <label for="login_username">Username:</label>
+          <input
+            type="text"
+            id="login-username"
+            name="login_username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="login_password">Password:</label>
+          <input
+            type="password"
+            id="login-password"
+            name="login_password"
+            required
+          />
+        </div>
+        <div class="btn-container">
+          <button type="submit">Login</button><br /><br />
+          <button type="button" class="cancel" id="btnCancelLogin">
+            <a href="customer_index.html" id="linkCancel">Cancel</a>
+          </button>
+        </div>
+      </form>
+      <p>
+        Don't have an account? <a href="customer_registration.html">Register</a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+#header_welcome {
+  background-color: #027581;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.iconLogOut {
+  margin-top: 5px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.iconLogOut a {
+  color: white;
+  font-size: 20px;
+}
+
+body {
+  background: linear-gradient(to top, #1bb2c2 0%, #ccffff 100%);
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(to top, #027581 0%, #33ccff 100%);
+}
+
+li {
+  float: left;
+  border-right: 1px solid black;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #027581;
+  color: white;
+}

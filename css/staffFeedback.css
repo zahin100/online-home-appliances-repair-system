@@ -1,0 +1,38 @@
+#main-content {
+  margin-left: 250px;
+}
+.content {
+  margin-left: 250px;
+}
+
+#container {
+  margin-left: 20px;
+}
+
+.feedback-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.feedback-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-card h2 {
+  margin-top: 0;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  color: #ffc107;
+}
+
+.star-rating .rating {
+  font-size: 18px;
+  margin-right: 5px;
+}

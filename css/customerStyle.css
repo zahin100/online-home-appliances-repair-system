@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+================== customer_login.html ==================
+*/
+
+#cust_login {
+  background-image: none; /* Remove background image */
+  background: lightblue; /* Set background color to light blue */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffa500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#btnCancelLogin {
+  margin-left: 0px;
+  padding: 0;
+}
+
+/*
+================== customer_aboutUs.html ==================
+*/
+
+#cust_aboutUs {
+  background-color: lightblue;
+}
+
+/*
+================== customer_registration.html ==================
+*/
+
+#cust_registration {
+  background-image: none;
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-container a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+#btnCancel {
+  padding: 0;
+}
+
+#linkCancel {
+  padding: 10px 20px;
+}
+
+.btn-container button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffa500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-container button.cancel {
+  background-color: #ffa500;
+  margin-left: 10px;
+}
+
+/*
+================== customer_feedback.html ==================
+*/
+
+#cust_feedback {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#h1_feedback {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#feedback-form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#h3_rate_experience,
+#h3_describe_experience {
+  margin-bottom: 10px;
+}
+
+.rating-stars {
+  margin-bottom: 20px;
+  direction: rtl; /* Set right-to-left direction */
+  text-align: left; /* Align stars to the left */
+}
+
+.rating-stars input[type="radio"] {
+  opacity: 0;
+}
+
+.rating-stars label {
+  display: inline-block;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.rating-stars input[type="radio"]:checked ~ label {
+  color: #ffcc00;
+}
+
+#textAreaDescribe {
+  width: 100%;
+  resize: vertical;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"],
+input[type="button"] {
+  background-color: #027581;
+  color: white; /* Change the text color to black */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Add margin between the buttons */
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #0c555e;
+  color: white; /* Change the text color to black */
+}
+
+/*
+================== customer_index.html ==================
+*/
+
+#h1_title_welcome {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#index_nav {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+#index_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#index_ul li {
+  margin-left: 10px;
+}
+
+#index_ul li:first-child {
+  margin-left: 0;
+}
+
+#index_ul li a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.signup-btn,
+.login-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.photo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.message-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*
+================== customer_index2.html ==================
+*/
+
+/* Add some basic styling 
+#index2_body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header_welcome {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+#index2_nav {
+  background-color: lightblue;
+  display: flex;
+  align-items: flex-start; /* Align items to the left 
+}
+
+#index2_nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#index2_nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+#index2_nav ul li a {
+  display: inline-block;
+  color: white; /* Set text color to white 
+  
+  text-decoration: none;
+  padding: 10px;
+  background-color: grey; /* Set background color to grey 
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+#index2_main {
+  padding: 20px;
+  text-align: center;
+}
+*/
+
+/*
+================== customer_payment.php ==================
+*/
+
+#h2_payment {
+  text-align: center;
+}
+#alternateAddressText,
+#makePaymentTo {
+  width: 50%;
+  height: 100px;
+}
+
+#alternateAddressText {
+  opacity: 50%;
+}
+
+.button-container-payment {
+  margin-top: 10px;
+}
+.button-container-payment button {
+  margin-bottom: 15px;
+  background-color: #027581;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.button-container-payment button:hover {
+  cursor: pointer;
+  background-color: #0c555e;
+  color: white;
+}
+
+.light-orange-textarea {
+  background-color: #027581;
+  color: white;
+}
+.button-container-payment .grey-button {
+  background-color: grey;
+}
+
+#receiptFile {
+  margin-left: 170px;
+}
+
+#makePaymentTo {
+  text-align: center;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#alternateAddress {
+  margin-left: 20px;
+}
+
+.cancel-button {
+  background-color: lightgrey;
+  color: black; /* Change the text color to black */
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+}
+
+.cancel-button:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-button:hover {
+  background-color: #0c555e;
+}
+
+/*
+================== customer_request_form.php ==================
+*/
+
+.cancel-btn,
+.submit-btn {
+  background-color: #027581;
+  border: none;
+  color: white; /* Changed text color to black */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.submit-btn:hover {
+  background-color: #0c555e;
+}
+
+.cancel-btn {
+  background-color: #ffa500;
+  margin-right: 10px;
+}
+
+.upload-btn {
+  background-color: gray;
+  border: none;
+  color: black; /* Changed text color to black */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Styling for the form */
+#repairForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.selectTypeLabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#selectType,
+#selectBrand,
+#description {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  text-align: center;
+}
+
+#h1_formName,
+#h1_formNamePayment {
+  text-align: center; /* Center the form name */
+}
+
+#sendToAddress {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/*
+================== customer_repair_request.php ==================
+*/
+
+#cust_repairRequest {
+  background-color: lightblue;
+}
+
+#h1_formName {
+  text-align: center;
+}
+
+#requestDetailsTable,
+#paymentTable {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: lightblue;
+  margin-bottom: 350px;
+}
+
+#requestDetailsTable th,
+#requestDetailsTable td,
+#paymentTable th,
+#paymentTable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#requestDetailsTable th,
+#paymentTable th {
+  background-color: #027581;
+  color: white;
+}
+
+.Pending {
+  background: #e69b00;
+  font-weight: 400;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.Shipped {
+  background: #48bf53;
+  font-weight: 400;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.Completed {
+  background: #48bf53;
+  font-weight: 400;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.tableEmpty {
+  text-align: center;
+}
+
+#formMakePayment {
+  text-align: center;
+}
